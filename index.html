@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Retro Snap Booth&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to bottom, #f4e1c6, #e3c19e);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Courier New', Courier, monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Press Start 2P', cursive;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4d2600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px #ffcc99;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#camera-frame {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 10px solid #4d2600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 640px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 480px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #000;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#filters {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #4d2600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#capture-button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: red;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#polaroid-preview {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 10px solid #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #fefefe;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4d2600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sepia { filter: sepia(100%); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bw { filter: grayscale(100%); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.polaroid { filter: contrast(120%) saturate(80%) hue-rotate(-20deg); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.warm { filter: sepia(60%) brightness(110%) hue-rotate(10deg); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.faded { filter: brightness(90%) contrast(85%) saturate(70%); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Retro Snap Booth&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Capture moments — timelessly vintage!&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;video id="camera-frame" autoplay&gt;&lt;/video&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="filters"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="applyFilter('sepia')"&gt;Sepia&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="applyFilter('bw')"&gt;Black &amp; White&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="applyFilter('polaroid')"&gt;Polaroid&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="applyFilter('warm')"&gt;70s Warm&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="applyFilter('faded')"&gt;Faded Film&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button id="capture-button"&gt;SHOOT&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="polaroid-preview"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;📸 Your photo will appear here!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button id="download-button" style="display: none; margin-top: 10px;"&gt;Download Photo&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;Keep it classic, keep it cool 🎞️&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Access webcam</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const video = document.getElementById('camera-frame');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navigator.mediaDevices.getUserMedia({ video: true })</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.then(stream =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>video.srcObject = stream;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>})</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.catch(err =&gt; console.error('Failed to access webcam:', err));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Capture photo</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const captureButton = document.getElementById('capture-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const polaroidPreview = document.getElementById('polaroid-preview');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const downloadButton = document.getElementById('download-button');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let capturedImageUrl = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>captureButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>captureButton.innerText = '3...';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>captureButton.innerText = '2...';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>captureButton.innerText = '1...';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const canvas = document.createElement('canvas');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>canvas.width = video.videoWidth;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>canvas.height = video.videoHeight;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const ctx = canvas.getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>ctx.drawImage(video, 0, 0, canvas.width, canvas.height);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>capturedImageUrl = canvas.toDataURL('image/png');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>polaroidPreview.innerHTML = `&lt;img src="${capturedImageUrl}" alt="Captured Photo" style="width:100%; border-radius: 5px;" class="${video.className}"/&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>downloadButton.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>captureButton.innerText = 'SHOOT';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>downloadButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const link = document.createElement('a');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>link.href = capturedImageUrl;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>link.download = 'RetroSnap.png';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>link.click();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function applyFilter(filter) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>video.className = filter;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
